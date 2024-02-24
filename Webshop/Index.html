@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nigs & Kicks</title>
+    <title>home Page</title>
+
+    <style>
+        body {
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            height: 135vh;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+          
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            color: rgb(117, 40, 40);
+        }
+
+        form {
+            margin-top: 80px;
+            text-align: center;
+            font-family: fantasy;
+        }
+
+        footer {
+            background-color: #5d1e1e;
+            color: white;
+            padding: 2px;                                                                               
+            text-align: center;
+            position: sticky;
+            bottom: 30;
+        }
+
+        /* Sidebar styling */
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #941b1b;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            left: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #openNav {
+            font-size: 30px;
+            cursor: pointer;
+            color: rgb(219, 31, 31);
+            background-color: unset;
+        }
+    </style>
 </head>
 <body>
-    
+    <button id="openNav" onclick="openNav()">&#9776; Open Menu</button>
+
+
+    <footer>
+        <h3>door Zion, Eleidy en Michael</h3>
+        <p><a href="https://instagram.com/z_10k_06?igshid=NGVhN2U2NjQ0Yg==">Mijn Instagram</a></p>
+    </footer>
 </body>
 </html>
