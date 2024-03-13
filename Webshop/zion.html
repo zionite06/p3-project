@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over Mij</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('Ontwerp zonder titel.jpg'); 
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .info {
+            display: none;
+            margin-top: 20px;
+            border: 1px solid #1f8bb3;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .info.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>portofolio</h1>
+
+        <button onclick="showInfo('kennis')">Kennis & vaardigheden</button>
+        <div id="kennis" class="info">
+            <h2>Kennis & vaardigheden</h2>
+            <p>Hier staat informatie over mijn kennis en vaardigheden.</p>
+        </div>
+
+        <button onclick="showInfo('contact')">Contactgegevens/ contactformulier</button>
+        <div id="contact" class="info">
+            <h2>Contactgegevens/ contactformulier</h2>
+            <p>Hier staan mijn contactgegevens of een contactformulier.</p>
+        </div>
+
+        <button onclick="showInfo('about')">Iets over jezelf. Wie ben je?</button>
+        <div id="about" class="info">
+            <h2>Iets over jezelf. Wie ben je?</h2>
+            <p>Hier staat informatie over wie ik ben.</p>
+        </div>
+
+        <button onclick="showInfo('opleiding')">Opleidingen</button>
+        <div id="opleiding" class="info">
+            <h2>Opleidingen</h2>
+            <p>Hier staan mijn opleidingen.</p>
+        </div>
+
+        <button onclick="showInfo('ervaring')">Werkervaring</button>
+        <div id="ervaring" class="info">
+            <h2>Werkervaring</h2>
+            <p>ik heb qua softwaredevellopment gerelateerde werk, GEEN ervaring.</p>
+        </div>
+
+        <button onclick="showInfo('technieken')">Welke technieken/ programmeertalen/ omgevingen ken als namen hebben</button>
+        <div id="technieken" class="info">
+            <h2>Welke technieken/ programmeertalen/ omgevingen ken als namen hebben</h2>
+            <p>Hier staan de technieken, programmeertalen, en omgevingen die ik ken.</p>
+        </div>
+    </div>
+
+    <script>
+        function showInfo(id) {
+            var info = document.getElementById(id);
+            if (info.classList.contains('show')) {
+                info.classList.remove('show');
+            } else {
+                info.classList.add('show');
+            }
+        }
+    </script>
+</body>
+</html>
