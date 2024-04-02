@@ -1,99 +1,14 @@
-
-<style>
-body {
-    background-image: url('background.jpg'); 
-    background-size: cover;
-    background-position: center center;
-    margin: 0;
-    padding: 0;
-    height: 135vh;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-  
-main {
-    flex: 1;
-    padding: 20px;
+label{
+    display: inline-block;
+    background-color:#839EFF;
+    width: 10%;
 }
 
-h1 {
-    color: rgb(117, 40, 40);
+table, th, td {
+    background-color: #839EFF;
+    border: 1px solid black;
 }
 
-form {
-    margin-top: 80px;
-    text-align: center;
-    font-family: fantasy;
+th{
+    background-color: grey;    
 }
-
-footer {
-    background-color: #5d1e1e;
-    color: white;
-    padding: 2px;                                                                               
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%; /* Full width */
-}
-
-/* Sidebar styling */
-.sidenav {
-    height: 100%;
-    width: 250px; /* Width of the side navigation */
-    position: fixed; /* Stay fixed */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: -250px; /* Start off-screen */
-    background-color: #111; /* Dark background color */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-    padding-top: 60px;
-}
-   
-h2{
-    color: chartreuse;
-}
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #941b1b;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#openNav {
-    font-size: 30px;
-    cursor: pointer;
-    color: rgb(219, 31, 31);
-    background-color: unset;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 2; /* Make sure it's on top of the sidebar */
-}
-
-/* Dropdown Content */
-.dropdown-content {
-    display: none;
-    padding-left: 20px;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
